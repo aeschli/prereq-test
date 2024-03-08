@@ -6,7 +6,6 @@
 
 mod command;
 mod constants;
-mod options;
 mod update_service;
 
  use crate::command::capture_command;
