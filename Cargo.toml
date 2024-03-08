@@ -1,0 +1,23 @@
+[package]
+name = "prereq"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+edition = "2018"
+name = "prepreq"
+path = "src/main.rs"
+
+[dependencies]
+regex = "1.8.3"
+lazy_static = "1.4.0"
+libc = "0.2.144"
+tokio = { version = "1.28.2", features = ["full"] }
+futures = "0.3.28"
+serde = { version = "1.0.163", features = ["derive"] }
+clap = { version = "4.3.0", features = ["derive", "env"] }
+serde_json = "1.0.96"
+const_format = "0.2.31"
+thiserror = "1.0.40"
